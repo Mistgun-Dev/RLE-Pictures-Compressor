@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>rle: Shannon-Fano coding archiver</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">rle
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.11 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li class="current"><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li><a href="files.html"><span>Fichiers</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Shannon-Fano coding archiver </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>To compile the project:</p>
+<p>$ make</p>
+<p>To start the program:</p>
+<p>$ ./src/shannon-fano</p>
+<p>Shannon-Fano coding archiver by Minh Ngo (<a href="#" onclick="location.href='mai'+'lto:'+'nlm'+'in'+'htl'+'@g'+'mai'+'l.'+'com'; return false;">nlmin<span style="display: none;">.nosp@m.</span>htl@<span style="display: none;">.nosp@m.</span>gmail<span style="display: none;">.nosp@m.</span>.com</a>)</p>
+<p>Ussage: ./shannon-fano OPTION input output -p compressing -u uncompressing</p>
+<h2>Example</h2>
+<pre class="fragment">    $ cat makefile
+
+    main:
+            gcc main.c bintree.c bitop.c pack.c sort.c unpack.c -o shannon-fano
+
+    $ ./shannon-fano -p makefile dd.sf
+
+    code table size: 23
+    c-&gt;0000
+    n-&gt;0001
+     -&gt;001
+    a-&gt;010
+    .-&gt;011
+    o-&gt;10000
+    i-&gt;10001
+    p-&gt;1001
+    t-&gt;10100
+    m-&gt;10101
+    k-&gt;1011
+    r-&gt;110000
+    b-&gt;110001
+    --&gt;11001
+
+    -&gt;11010
+    s-&gt;11011
+    e-&gt;111000
+    u-&gt;111001
+    :-&gt;111010
+            -&gt;111011
+    f-&gt;111100
+    h-&gt;111101
+    g-&gt;11111
+    c-&gt;0000
+    n-&gt;0001
+     -&gt;001
+    a-&gt;010
+    .-&gt;011
+    o-&gt;10000
+    i-&gt;10001
+    p-&gt;1001
+    t-&gt;10100
+    m-&gt;10101
+    k-&gt;1011
+    r-&gt;110000
+    b-&gt;110001
+    --&gt;11001
+
+    -&gt;11010
+    s-&gt;11011
+    e-&gt;111000
+    u-&gt;111001
+    :-&gt;111010
+            -&gt;111011
+    f-&gt;111100
+    h-&gt;111101
+    g-&gt;11111
+    time:0.000000
+
+    $ ./shannon-fano -u dd.sf dd
+
+    time:0.000000   
+
+    $ md5sum dd &amp;&amp; md5sum makefile
+
+    e7b192cd77a633d5e11fa3ba2359fd91  dd
+    e7b192cd77a633d5e11fa3ba2359fd91  makefile
+</pre><h1>Entropy finding</h1>
+<pre class="fragment">    ./utilities/entropy &lt;filename&gt;
+</pre><h2>Example</h2>
+<pre class="fragment">    $ utilities/entropy shannon-fano/makefile 
+
+    Symbol                  Symbol Count                    Probability
+    "       "                       1                       0.013514
+    "
+    "                       1                       0.013514
+    " "                     8                       0.108108
+    "-"                     2                       0.027027
+    "."                     6                       0.081081
+    ":"                     1                       0.013514
+    "a"                     6                       0.081081
+    "b"                     2                       0.027027
+    "c"                     10                      0.135135
+    "e"                     2                       0.027027
+    "f"                     1                       0.013514
+    "g"                     1                       0.013514
+    "h"                     1                       0.013514
+    "i"                     4                       0.054054
+    "k"                     2                       0.027027
+    "m"                     2                       0.027027
+    "n"                     8                       0.108108
+    "o"                     5                       0.067568
+    "p"                     3                       0.040541
+    "r"                     2                       0.027027
+    "s"                     2                       0.027027
+    "t"                     3                       0.040541
+    "u"                     1                       0.013514
+    Entropy: 4.110018</pre> </div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

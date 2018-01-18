@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>rle: Référence du fichier ppm.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">rle
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.11 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier ppm.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Fichier permettant de charger une image en mémoire, et d'y éfféctuer des modifications.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="ima_8h_source.html">ima.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a4133c8eaeab44b987dac9edc847f21c9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ppm_8c.html#a4133c8eaeab44b987dac9edc847f21c9">INSPIREPAR</a>&#160;&#160;&#160;&quot;RPFELGUEIRAS&quot;</td></tr>
+<tr class="separator:a4133c8eaeab44b987dac9edc847f21c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6661bae6dc00581909b57f1da0ed2c82"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ppm_8c.html#a6661bae6dc00581909b57f1da0ed2c82">CREATOR</a>&#160;&#160;&#160;&quot;JJ&quot;</td></tr>
+<tr class="separator:a6661bae6dc00581909b57f1da0ed2c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3886585bf0f32d024889d7f3d01defbf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ppm_8c.html#a3886585bf0f32d024889d7f3d01defbf">RGB_COMPONENT_COLOR</a>&#160;&#160;&#160;255</td></tr>
+<tr class="separator:a3886585bf0f32d024889d7f3d01defbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a07b4ae891fcc1f4ba19489660208209f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ppm_8c.html#a07b4ae891fcc1f4ba19489660208209f">sizeOfHeader</a> (FILE *in)</td></tr>
+<tr class="memdesc:a07b4ae891fcc1f4ba19489660208209f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui retourne le nombre d'octet que compose le header de l'image.  <a href="#a07b4ae891fcc1f4ba19489660208209f">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a07b4ae891fcc1f4ba19489660208209f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ae7288bf21f1d8a6ce1b643debe2b55"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ppm_8c.html#a9ae7288bf21f1d8a6ce1b643debe2b55">ImageLoad_PPM</a> (char *filename, <a class="el" href="structImage.html">Image</a> *img)</td></tr>
+<tr class="separator:a9ae7288bf21f1d8a6ce1b643debe2b55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66352b18829027a14f8e553e64db6310"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ppm_8c.html#a66352b18829027a14f8e553e64db6310">return_picture</a> (<a class="el" href="structImage.html">Image</a> *img)</td></tr>
+<tr class="separator:a66352b18829027a14f8e553e64db6310"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a311589d85c1121c9c24a621bd601ac78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ppm_8c.html#a311589d85c1121c9c24a621bd601ac78">refresh_original</a> ()</td></tr>
+<tr class="memdesc:a311589d85c1121c9c24a621bd601ac78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui actualise les données original de l'image en RGB si il y a eu une conversion en HSV au préalable.  <a href="#a311589d85c1121c9c24a621bd601ac78">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a311589d85c1121c9c24a621bd601ac78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Fichier permettant de charger une image en mémoire, et d'y éfféctuer des modifications. </p>
+<dl class="section author"><dt>Auteur</dt><dd>Jean-Jacques Bourdin </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>20 december 2016 </dd></dl>
+</div><h2 class="groupheader">Documentation des macros</h2>
+<a class="anchor" id="a6661bae6dc00581909b57f1da0ed2c82"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CREATOR&#160;&#160;&#160;&quot;JJ&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4133c8eaeab44b987dac9edc847f21c9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define INSPIREPAR&#160;&#160;&#160;&quot;RPFELGUEIRAS&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3886585bf0f32d024889d7f3d01defbf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RGB_COMPONENT_COLOR&#160;&#160;&#160;255</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Référencé par <a class="el" href="ppm_8c.html#a9ae7288bf21f1d8a6ce1b643debe2b55">ImageLoad_PPM()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a class="anchor" id="a9ae7288bf21f1d8a6ce1b643debe2b55"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ImageLoad_PPM </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structImage.html">Image</a> *&#160;</td>
+          <td class="paramname"><em>img</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Références <a class="el" href="structImage.html#affa4fe164193644a1cd4c7323263f372">Image::data</a>, <a class="el" href="structImage.html#a8e7c0788715aba5eab4b357c4db3d179">Image::header</a>, <a class="el" href="ima_8h.html#a6592824edb883c79ce94e3267887e361">image</a>, <a class="el" href="structImage.html#aa0d765da878867713de87e747720bb02">Image::original_data</a>, <a class="el" href="ppm_8c.html#a66352b18829027a14f8e553e64db6310">return_picture()</a>, <a class="el" href="ppm_8c.html#a3886585bf0f32d024889d7f3d01defbf">RGB_COMPONENT_COLOR</a>, <a class="el" href="structImage.html#abdd448b43aa9bb1c1576044f2ff2a4c3">Image::sizeHeader</a>, <a class="el" href="ppm_8c.html#a07b4ae891fcc1f4ba19489660208209f">sizeOfHeader()</a>, <a class="el" href="structImage.html#adcce1835f8002f357d6ae738357554b2">Image::sizeX</a>, et <a class="el" href="structImage.html#aed850e89ff9fbba6903ba3d24edac0ed">Image::sizeY</a>.</p>
+
+<p>Référencé par <a class="el" href="main_8c.html#aa97480e4f78b627c93619e4d23c1722c">Init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a311589d85c1121c9c24a621bd601ac78"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void refresh_original </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction qui actualise les données original de l'image en RGB si il y a eu une conversion en HSV au préalable. </p>
+
+<p>Références <a class="el" href="structImage.html#affa4fe164193644a1cd4c7323263f372">Image::data</a>, <a class="el" href="ima_8h.html#a6592824edb883c79ce94e3267887e361">image</a>, <a class="el" href="structImage.html#aa0d765da878867713de87e747720bb02">Image::original_data</a>, <a class="el" href="ima_8h.html#a900a3a06f733ca5e338e42bd6cc51f27">originalPics</a>, <a class="el" href="structImage.html#adcce1835f8002f357d6ae738357554b2">Image::sizeX</a>, et <a class="el" href="structImage.html#aed850e89ff9fbba6903ba3d24edac0ed">Image::sizeY</a>.</p>
+
+<p>Référencé par <a class="el" href="main_8c.html#aa0efe08b8090b41269b051775dd41266">menuFunc()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a66352b18829027a14f8e553e64db6310"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void return_picture </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structImage.html">Image</a> *&#160;</td>
+          <td class="paramname"><em>img</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Références <a class="el" href="structImage.html#affa4fe164193644a1cd4c7323263f372">Image::data</a>, <a class="el" href="structImage.html#adcce1835f8002f357d6ae738357554b2">Image::sizeX</a>, et <a class="el" href="structImage.html#aed850e89ff9fbba6903ba3d24edac0ed">Image::sizeY</a>.</p>
+
+<p>Référencé par <a class="el" href="ima_8h.html#a7f428358cac9ebaeae481f9d7bd4f517">compress()</a>, <a class="el" href="ima_8h.html#a22c164c4ef724f59a546c69702a556cb">convertRGB_to_HSV()</a>, et <a class="el" href="ppm_8c.html#a9ae7288bf21f1d8a6ce1b643debe2b55">ImageLoad_PPM()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a07b4ae891fcc1f4ba19489660208209f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sizeOfHeader </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>in</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction qui retourne le nombre d'octet que compose le header de l'image. </p>
+
+<p>Référencé par <a class="el" href="ima_8h.html#a3c95a8d2510d82bb74b50da030ec1909">convertHSV_to_RGB()</a>, <a class="el" href="ima_8h.html#a00bc5acfadee4452b9f684eeea28387c">decompress()</a>, et <a class="el" href="ppm_8c.html#a9ae7288bf21f1d8a6ce1b643debe2b55">ImageLoad_PPM()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

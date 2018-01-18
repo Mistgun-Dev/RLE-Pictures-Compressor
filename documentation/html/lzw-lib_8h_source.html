@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>rle:  Fichier source de Algorithm comparaison/lzw/lzw-lib.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">rle
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.11 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_3e89c4d17863a47d5d71f3833bb79980.html">Algorithm comparaison</a></li><li class="navelem"><a class="el" href="dir_43be0c8d3bfd10c71e9cf92a9d67b714.html">lzw</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">lzw-lib.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="lzw-lib_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//                            **** LZW-AB ****                            //</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//               Adjusted Binary LZW Compressor/Decompressor              //</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//                     Copyright (c) 2016 David Bryant                    //</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//                           All Rights Reserved                          //</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//      Distributed under the BSD Software License (see license.txt)      //</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef LZWLIB_H_</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define LZWLIB_H_</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keywordtype">int</span> <a class="code" href="lzw-lib_8h.html#a7a8020281ae6009798c26409328d94bc">lzw_compress</a> (<span class="keywordtype">void</span> (*dst)(<span class="keywordtype">int</span>), <span class="keywordtype">int</span> (*src)(<span class="keywordtype">void</span>), <span class="keywordtype">int</span> maxbits);</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keywordtype">int</span> <a class="code" href="lzw-lib_8h.html#a7ddfcca19f35852b7c378d5a9763f11b">lzw_decompress</a> (<span class="keywordtype">void</span> (*dst)(<span class="keywordtype">int</span>), <span class="keywordtype">int</span> (*src)(<span class="keywordtype">void</span>));</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* LZWLIB_H_ */</span><span class="preprocessor"></span></div><div class="ttc" id="lzw-lib_8h_html_a7a8020281ae6009798c26409328d94bc"><div class="ttname"><a href="lzw-lib_8h.html#a7a8020281ae6009798c26409328d94bc">lzw_compress</a></div><div class="ttdeci">int lzw_compress(void(*dst)(int), int(*src)(void), int maxbits)</div><div class="ttdef"><b>Definition:</b> lzw-lib.c:95</div></div>
+<div class="ttc" id="lzw-lib_8h_html_a7ddfcca19f35852b7c378d5a9763f11b"><div class="ttname"><a href="lzw-lib_8h.html#a7ddfcca19f35852b7c378d5a9763f11b">lzw_decompress</a></div><div class="ttdeci">int lzw_decompress(void(*dst)(int), int(*src)(void))</div><div class="ttdef"><b>Definition:</b> lzw-lib.c:213</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

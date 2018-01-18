@@ -1,0 +1,407 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>rle: Référence du fichier Algorithm comparaison/lzw/lzwfilter.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">rle
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.11 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_3e89c4d17863a47d5d71f3833bb79980.html">Algorithm comparaison</a></li><li class="navelem"><a class="el" href="dir_43be0c8d3bfd10c71e9cf92a9d67b714.html">lzw</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier lzwfilter.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="lzw-lib_8h_source.html">lzw-lib.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a995beb5aeb2bda0ae6071bdb266448b3"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lzwfilter_8c.html#a995beb5aeb2bda0ae6071bdb266448b3">read_buff</a> (void)</td></tr>
+<tr class="separator:a995beb5aeb2bda0ae6071bdb266448b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abca27fe6e23f907d6f5eeeb34abd62bb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lzwfilter_8c.html#abca27fe6e23f907d6f5eeeb34abd62bb">write_buff</a> (int value)</td></tr>
+<tr class="separator:abca27fe6e23f907d6f5eeeb34abd62bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lzwfilter_8c.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
+<tr class="separator:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:aef1bd6ad890a110b466cb0e8088507a2"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lzwfilter_8c.html#aef1bd6ad890a110b466cb0e8088507a2">usage</a></td></tr>
+<tr class="separator:aef1bd6ad890a110b466cb0e8088507a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dd302c4a0df1e1cbad4ea2aabccedc2"><td class="memItemLeft" align="right" valign="top">static unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lzwfilter_8c.html#a9dd302c4a0df1e1cbad4ea2aabccedc2">read_buffer</a> [65536]</td></tr>
+<tr class="separator:a9dd302c4a0df1e1cbad4ea2aabccedc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a193e4281d4e7287b31239343e9f0fb7f"><td class="memItemLeft" align="right" valign="top">static unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lzwfilter_8c.html#a193e4281d4e7287b31239343e9f0fb7f">write_buffer</a> [65536]</td></tr>
+<tr class="separator:a193e4281d4e7287b31239343e9f0fb7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41492874287d4b2be065d2597ba0c8df"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lzwfilter_8c.html#a41492874287d4b2be065d2597ba0c8df">read_count</a></td></tr>
+<tr class="separator:a41492874287d4b2be065d2597ba0c8df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad625c8f05eb945649ed31c9c78c97ed5"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lzwfilter_8c.html#ad625c8f05eb945649ed31c9c78c97ed5">write_count</a></td></tr>
+<tr class="separator:ad625c8f05eb945649ed31c9c78c97ed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82e170907667afb257c30eb468f4d6c2"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lzwfilter_8c.html#a82e170907667afb257c30eb468f4d6c2">read_checksum</a></td></tr>
+<tr class="separator:a82e170907667afb257c30eb468f4d6c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09df14f081dfa7a52209ba22d94497fc"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lzwfilter_8c.html#a09df14f081dfa7a52209ba22d94497fc">write_checksum</a></td></tr>
+<tr class="separator:a09df14f081dfa7a52209ba22d94497fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8198913ba39692528e0be42adff4e5a2"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lzwfilter_8c.html#a8198913ba39692528e0be42adff4e5a2">read_head</a></td></tr>
+<tr class="separator:a8198913ba39692528e0be42adff4e5a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43a4d3797531c7449d1c353f6d6be721"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lzwfilter_8c.html#a43a4d3797531c7449d1c353f6d6be721">read_tail</a></td></tr>
+<tr class="separator:a43a4d3797531c7449d1c353f6d6be721"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c3ff66e486350117c6a425d5eb2d141"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lzwfilter_8c.html#a2c3ff66e486350117c6a425d5eb2d141">write_head</a></td></tr>
+<tr class="separator:a2c3ff66e486350117c6a425d5eb2d141"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a class="anchor" id="a3c04138a5bfe5d72780bb7e82a18e627"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>argv</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Références <a class="el" href="decompress_8c.html#a00bc5acfadee4452b9f684eeea28387c">decompress()</a>, <a class="el" href="lzw-lib_8c.html#a7a8020281ae6009798c26409328d94bc">lzw_compress()</a>, <a class="el" href="lzw-lib_8c.html#a7ddfcca19f35852b7c378d5a9763f11b">lzw_decompress()</a>, <a class="el" href="lzwfilter_8c.html#a995beb5aeb2bda0ae6071bdb266448b3">read_buff()</a>, <a class="el" href="lzwfilter_8c.html#a82e170907667afb257c30eb468f4d6c2">read_checksum</a>, <a class="el" href="lzwfilter_8c.html#a41492874287d4b2be065d2597ba0c8df">read_count</a>, <a class="el" href="lzwfilter_8c.html#aef1bd6ad890a110b466cb0e8088507a2">usage</a>, <a class="el" href="lzwfilter_8c.html#abca27fe6e23f907d6f5eeeb34abd62bb">write_buff()</a>, <a class="el" href="lzwfilter_8c.html#a09df14f081dfa7a52209ba22d94497fc">write_checksum</a>, et <a class="el" href="lzwfilter_8c.html#ad625c8f05eb945649ed31c9c78c97ed5">write_count</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a995beb5aeb2bda0ae6071bdb266448b3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int read_buff </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Références <a class="el" href="lzwfilter_8c.html#a9dd302c4a0df1e1cbad4ea2aabccedc2">read_buffer</a>, <a class="el" href="lzwfilter_8c.html#a82e170907667afb257c30eb468f4d6c2">read_checksum</a>, <a class="el" href="lzwfilter_8c.html#a41492874287d4b2be065d2597ba0c8df">read_count</a>, <a class="el" href="lzwfilter_8c.html#a8198913ba39692528e0be42adff4e5a2">read_head</a>, et <a class="el" href="lzwfilter_8c.html#a43a4d3797531c7449d1c353f6d6be721">read_tail</a>.</p>
+
+<p>Référencé par <a class="el" href="lzwfilter_8c.html#a3c04138a5bfe5d72780bb7e82a18e627">main()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abca27fe6e23f907d6f5eeeb34abd62bb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void write_buff </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Références <a class="el" href="lzwfilter_8c.html#a193e4281d4e7287b31239343e9f0fb7f">write_buffer</a>, <a class="el" href="lzwfilter_8c.html#a09df14f081dfa7a52209ba22d94497fc">write_checksum</a>, <a class="el" href="lzwfilter_8c.html#ad625c8f05eb945649ed31c9c78c97ed5">write_count</a>, et <a class="el" href="lzwfilter_8c.html#a2c3ff66e486350117c6a425d5eb2d141">write_head</a>.</p>
+
+<p>Référencé par <a class="el" href="lzwfilter_8c.html#a3c04138a5bfe5d72780bb7e82a18e627">main()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des variables</h2>
+<a class="anchor" id="a9dd302c4a0df1e1cbad4ea2aabccedc2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char read_buffer[65536]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Référencé par <a class="el" href="lzwfilter_8c.html#a995beb5aeb2bda0ae6071bdb266448b3">read_buff()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a82e170907667afb257c30eb468f4d6c2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int read_checksum</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Référencé par <a class="el" href="lzwfilter_8c.html#a3c04138a5bfe5d72780bb7e82a18e627">main()</a>, et <a class="el" href="lzwfilter_8c.html#a995beb5aeb2bda0ae6071bdb266448b3">read_buff()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a41492874287d4b2be065d2597ba0c8df"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t read_count</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Référencé par <a class="el" href="lzwfilter_8c.html#a3c04138a5bfe5d72780bb7e82a18e627">main()</a>, et <a class="el" href="lzwfilter_8c.html#a995beb5aeb2bda0ae6071bdb266448b3">read_buff()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8198913ba39692528e0be42adff4e5a2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int read_head</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Référencé par <a class="el" href="lzwfilter_8c.html#a995beb5aeb2bda0ae6071bdb266448b3">read_buff()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a43a4d3797531c7449d1c353f6d6be721"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int read_tail</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Référencé par <a class="el" href="lzwfilter_8c.html#a995beb5aeb2bda0ae6071bdb266448b3">read_buff()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aef1bd6ad890a110b466cb0e8088507a2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* usage</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Valeur initiale :</b><div class="fragment"><div class="line">=</div><div class="line"><span class="stringliteral">&quot; Usage:     LZW-AB [-options] [&lt; infile] [&gt; outfile]\n\n&quot;</span></div><div class="line"><span class="stringliteral">&quot; Operation: compression is default, use -d to decompress\n\n&quot;</span></div><div class="line"><span class="stringliteral">&quot; Options:  -d     = decompress\n&quot;</span></div><div class="line"><span class="stringliteral">&quot;           -h     = display this \&quot;help\&quot; message\n&quot;</span></div><div class="line"><span class="stringliteral">&quot;           -1     = maximum symbol size = 9 bits\n&quot;</span></div><div class="line"><span class="stringliteral">&quot;           -2     = maximum symbol size = 10 bits\n&quot;</span></div><div class="line"><span class="stringliteral">&quot;           -3     = maximum symbol size = 11 bits\n&quot;</span></div><div class="line"><span class="stringliteral">&quot;           -4     = maximum symbol size = 12 bits (default)\n&quot;</span></div><div class="line"><span class="stringliteral">&quot;           -v     = verbose (display ratio and checksum)\n\n&quot;</span></div><div class="line"><span class="stringliteral">&quot; Web:       Visit www.github.com/dbry/lzw-ab for latest version and info\n\n&quot;</span></div></div><!-- fragment -->
+<p>Référencé par <a class="el" href="lzwfilter_8c.html#a3c04138a5bfe5d72780bb7e82a18e627">main()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a193e4281d4e7287b31239343e9f0fb7f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char write_buffer[65536]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Référencé par <a class="el" href="lzwfilter_8c.html#abca27fe6e23f907d6f5eeeb34abd62bb">write_buff()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a09df14f081dfa7a52209ba22d94497fc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int write_checksum</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Référencé par <a class="el" href="lzwfilter_8c.html#a3c04138a5bfe5d72780bb7e82a18e627">main()</a>, et <a class="el" href="lzwfilter_8c.html#abca27fe6e23f907d6f5eeeb34abd62bb">write_buff()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad625c8f05eb945649ed31c9c78c97ed5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t write_count</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Référencé par <a class="el" href="lzwfilter_8c.html#a3c04138a5bfe5d72780bb7e82a18e627">main()</a>, et <a class="el" href="lzwfilter_8c.html#abca27fe6e23f907d6f5eeeb34abd62bb">write_buff()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2c3ff66e486350117c6a425d5eb2d141"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int write_head</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Référencé par <a class="el" href="lzwfilter_8c.html#abca27fe6e23f907d6f5eeeb34abd62bb">write_buff()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

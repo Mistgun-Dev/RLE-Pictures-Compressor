@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>rle: Référence du fichier compress.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">rle
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.11 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier compress.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Fichier gérant la compression RLE et la conversion RGB en HSV.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="ima_8h_source.html">ima.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:abd8bbcfabb3ddef2ccaafb9928a37b95"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compress_8c.html#abd8bbcfabb3ddef2ccaafb9928a37b95">min</a> (int a, int b)</td></tr>
+<tr class="memdesc:abd8bbcfabb3ddef2ccaafb9928a37b95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui retourne le minimum des deux valeurs passées en paramètre.  <a href="#abd8bbcfabb3ddef2ccaafb9928a37b95">Plus de détails...</a><br /></td></tr>
+<tr class="separator:abd8bbcfabb3ddef2ccaafb9928a37b95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af082905f7eac6d03e92015146bbc1925"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compress_8c.html#af082905f7eac6d03e92015146bbc1925">max</a> (int a, int b)</td></tr>
+<tr class="memdesc:af082905f7eac6d03e92015146bbc1925"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui retourne le maximum des deux valeurs passées en paramètre.  <a href="#af082905f7eac6d03e92015146bbc1925">Plus de détails...</a><br /></td></tr>
+<tr class="separator:af082905f7eac6d03e92015146bbc1925"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac84703caef7139d45f1c1fcfbd165f84"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compress_8c.html#ac84703caef7139d45f1c1fcfbd165f84">RGB_TO_HSV</a> (GLubyte *r, GLubyte *g, GLubyte *b)</td></tr>
+<tr class="memdesc:ac84703caef7139d45f1c1fcfbd165f84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui convertis un pixel RGB en HSV.  <a href="#ac84703caef7139d45f1c1fcfbd165f84">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ac84703caef7139d45f1c1fcfbd165f84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22c164c4ef724f59a546c69702a556cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compress_8c.html#a22c164c4ef724f59a546c69702a556cb">convertRGB_to_HSV</a> ()</td></tr>
+<tr class="memdesc:a22c164c4ef724f59a546c69702a556cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui parcoure le tableau de données de l'image et converti chaque pixel en HSV.  <a href="#a22c164c4ef724f59a546c69702a556cb">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a22c164c4ef724f59a546c69702a556cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f428358cac9ebaeae481f9d7bd4f517"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compress_8c.html#a7f428358cac9ebaeae481f9d7bd4f517">compress</a> ()</td></tr>
+<tr class="memdesc:a7f428358cac9ebaeae481f9d7bd4f517"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui compresse les données de l'image, que l'image soit en HSV OU RGB la façon de compresser reste la meme, donc une fonction pour les deux modes.  <a href="#a7f428358cac9ebaeae481f9d7bd4f517">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a7f428358cac9ebaeae481f9d7bd4f517"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Fichier gérant la compression RLE et la conversion RGB en HSV. </p>
+<dl class="section author"><dt>Auteur</dt><dd>Nehari Mohamed </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>20 december 2016 </dd></dl>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a class="anchor" id="a7f428358cac9ebaeae481f9d7bd4f517"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float compress </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction qui compresse les données de l'image, que l'image soit en HSV OU RGB la façon de compresser reste la meme, donc une fonction pour les deux modes. </p>
+<ul>
+<li>retourne en sortie le ratio de compression de l'image </li>
+</ul>
+
+<p>Références <a class="el" href="structtree.html#ac5fb85480ddf2f373b099c2a2df0edab">tree::data</a>, <a class="el" href="structImage.html#affa4fe164193644a1cd4c7323263f372">Image::data</a>, <a class="el" href="structImage.html#a8e7c0788715aba5eab4b357c4db3d179">Image::header</a>, <a class="el" href="ima_8h.html#a6592824edb883c79ce94e3267887e361">image</a>, <a class="el" href="ima_8h.html#a66352b18829027a14f8e553e64db6310">return_picture()</a>, <a class="el" href="structImage.html#abdd448b43aa9bb1c1576044f2ff2a4c3">Image::sizeHeader</a>, <a class="el" href="structImage.html#adcce1835f8002f357d6ae738357554b2">Image::sizeX</a>, et <a class="el" href="structImage.html#aed850e89ff9fbba6903ba3d24edac0ed">Image::sizeY</a>.</p>
+
+<p>Référencé par <a class="el" href="main_8c.html#aa0efe08b8090b41269b051775dd41266">menuFunc()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a22c164c4ef724f59a546c69702a556cb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void convertRGB_to_HSV </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction qui parcoure le tableau de données de l'image et converti chaque pixel en HSV. </p>
+
+<p>Références <a class="el" href="structImage.html#affa4fe164193644a1cd4c7323263f372">Image::data</a>, <a class="el" href="ima_8h.html#a9fdb7496922bfb0c2ae56d7104c04701">Display()</a>, <a class="el" href="ima_8h.html#a6592824edb883c79ce94e3267887e361">image</a>, <a class="el" href="ima_8h.html#a900a3a06f733ca5e338e42bd6cc51f27">originalPics</a>, <a class="el" href="ima_8h.html#a66352b18829027a14f8e553e64db6310">return_picture()</a>, <a class="el" href="compress_8c.html#ac84703caef7139d45f1c1fcfbd165f84">RGB_TO_HSV()</a>, <a class="el" href="structImage.html#adcce1835f8002f357d6ae738357554b2">Image::sizeX</a>, et <a class="el" href="structImage.html#aed850e89ff9fbba6903ba3d24edac0ed">Image::sizeY</a>.</p>
+
+<p>Référencé par <a class="el" href="main_8c.html#aa0efe08b8090b41269b051775dd41266">menuFunc()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af082905f7eac6d03e92015146bbc1925"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int max </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction qui retourne le maximum des deux valeurs passées en paramètre. </p>
+
+<p>Référencé par <a class="el" href="ima_8h.html#ac84703caef7139d45f1c1fcfbd165f84">RGB_TO_HSV()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abd8bbcfabb3ddef2ccaafb9928a37b95"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int min </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction qui retourne le minimum des deux valeurs passées en paramètre. </p>
+
+<p>Référencé par <a class="el" href="ima_8h.html#ac84703caef7139d45f1c1fcfbd165f84">RGB_TO_HSV()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac84703caef7139d45f1c1fcfbd165f84"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RGB_TO_HSV </td>
+          <td>(</td>
+          <td class="paramtype">GLubyte *&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLubyte *&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLubyte *&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction qui convertis un pixel RGB en HSV. </p>
+
+<p>Références <a class="el" href="compress_8c.html#af082905f7eac6d03e92015146bbc1925">max()</a>, et <a class="el" href="compress_8c.html#abd8bbcfabb3ddef2ccaafb9928a37b95">min()</a>.</p>
+
+<p>Référencé par <a class="el" href="ima_8h.html#a22c164c4ef724f59a546c69702a556cb">convertRGB_to_HSV()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

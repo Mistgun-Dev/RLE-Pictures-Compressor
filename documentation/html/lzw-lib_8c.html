@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>rle: Référence du fichier Algorithm comparaison/lzw/lzw-lib.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">rle
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.11 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_3e89c4d17863a47d5d71f3833bb79980.html">Algorithm comparaison</a></li><li class="navelem"><a class="el" href="dir_43be0c8d3bfd10c71e9cf92a9d67b714.html">lzw</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier lzw-lib.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="lzw-lib_8h_source.html">lzw-lib.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a4350ea460ad64714c617506677d68191"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lzw-lib_8c.html#a4350ea460ad64714c617506677d68191">NULL_CODE</a>&#160;&#160;&#160;-1</td></tr>
+<tr class="separator:a4350ea460ad64714c617506677d68191"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecaaa7c75dc3f2e69e1f48dab3e77ea8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lzw-lib_8c.html#aecaaa7c75dc3f2e69e1f48dab3e77ea8">CLEAR_CODE</a>&#160;&#160;&#160;256</td></tr>
+<tr class="separator:aecaaa7c75dc3f2e69e1f48dab3e77ea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a764291b6bdb2db852e7ea892e58b573c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lzw-lib_8c.html#a764291b6bdb2db852e7ea892e58b573c">FIRST_STRING</a>&#160;&#160;&#160;257</td></tr>
+<tr class="separator:a764291b6bdb2db852e7ea892e58b573c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe8cbc529e6b2c8cd3e25234b988d817"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lzw-lib_8c.html#afe8cbc529e6b2c8cd3e25234b988d817">WRITE_CODE</a>(code,  maxcode)</td></tr>
+<tr class="separator:afe8cbc529e6b2c8cd3e25234b988d817"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a7a8020281ae6009798c26409328d94bc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lzw-lib_8c.html#a7a8020281ae6009798c26409328d94bc">lzw_compress</a> (void(*dst)(int), int(*src)(void), int maxbits)</td></tr>
+<tr class="separator:a7a8020281ae6009798c26409328d94bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ddfcca19f35852b7c378d5a9763f11b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lzw-lib_8c.html#a7ddfcca19f35852b7c378d5a9763f11b">lzw_decompress</a> (void(*dst)(int), int(*src)(void))</td></tr>
+<tr class="separator:a7ddfcca19f35852b7c378d5a9763f11b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentation des macros</h2>
+<a class="anchor" id="aecaaa7c75dc3f2e69e1f48dab3e77ea8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CLEAR_CODE&#160;&#160;&#160;256</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Référencé par <a class="el" href="lzw-lib_8h.html#a7a8020281ae6009798c26409328d94bc">lzw_compress()</a>, et <a class="el" href="lzw-lib_8h.html#a7ddfcca19f35852b7c378d5a9763f11b">lzw_decompress()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a764291b6bdb2db852e7ea892e58b573c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FIRST_STRING&#160;&#160;&#160;257</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Référencé par <a class="el" href="lzw-lib_8h.html#a7a8020281ae6009798c26409328d94bc">lzw_compress()</a>, et <a class="el" href="lzw-lib_8h.html#a7ddfcca19f35852b7c378d5a9763f11b">lzw_decompress()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4350ea460ad64714c617506677d68191"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NULL_CODE&#160;&#160;&#160;-1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Référencé par <a class="el" href="lzw-lib_8h.html#a7a8020281ae6009798c26409328d94bc">lzw_compress()</a>, et <a class="el" href="lzw-lib_8h.html#a7ddfcca19f35852b7c378d5a9763f11b">lzw_decompress()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afe8cbc529e6b2c8cd3e25234b988d817"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WRITE_CODE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">code, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">maxcode&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valeur :</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                           \</div><div class="line">    int code_bits = (maxcode) &lt; 1024 ?                          \</div><div class="line">        ((maxcode) &lt; 512 ? 8 : 9) :                             \</div><div class="line">        ((maxcode) &lt; 2048 ? 10 : 11);                           \</div><div class="line">    int extras = (1 &lt;&lt; (code_bits + 1)) - (maxcode) - 1;        \</div><div class="line">    if ((code) &lt; extras) {                                      \</div><div class="line">        shifter |= ((long)(code) &lt;&lt; bits);                      \</div><div class="line">        bits += code_bits;                                      \</div><div class="line">    }                                                           \</div><div class="line">    else {                                                      \</div><div class="line">        shifter |= ((long)(((code) + extras) &gt;&gt; 1) &lt;&lt; bits);    \</div><div class="line">        bits += code_bits;                                      \</div><div class="line">        shifter |= ((long)(((code) + extras) &amp; 1) &lt;&lt; bits++);   \</div><div class="line">    }                                                           \</div><div class="line">    do { (*dst)(shifter); shifter &gt;&gt;= 8; output_bytes++;        \</div><div class="line">    } <span class="keywordflow">while</span> ((bits -= 8) &gt;= 8);                                 \</div><div class="line">} <span class="keywordflow">while</span> (0)</div></div><!-- fragment -->
+<p>Référencé par <a class="el" href="lzw-lib_8h.html#a7a8020281ae6009798c26409328d94bc">lzw_compress()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a class="anchor" id="a7a8020281ae6009798c26409328d94bc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int lzw_compress </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(int)&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int(*)(void)&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxbits</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Références <a class="el" href="lzw-lib_8c.html#aecaaa7c75dc3f2e69e1f48dab3e77ea8">CLEAR_CODE</a>, <a class="el" href="lzw-lib_8c.html#a764291b6bdb2db852e7ea892e58b573c">FIRST_STRING</a>, <a class="el" href="lzw-lib_8c.html#a4350ea460ad64714c617506677d68191">NULL_CODE</a>, et <a class="el" href="lzw-lib_8c.html#afe8cbc529e6b2c8cd3e25234b988d817">WRITE_CODE</a>.</p>
+
+<p>Référencé par <a class="el" href="lzwfilter_8c.html#a3c04138a5bfe5d72780bb7e82a18e627">main()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7ddfcca19f35852b7c378d5a9763f11b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int lzw_decompress </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(int)&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int(*)(void)&#160;</td>
+          <td class="paramname"><em>src</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Références <a class="el" href="lzw-lib_8c.html#aecaaa7c75dc3f2e69e1f48dab3e77ea8">CLEAR_CODE</a>, <a class="el" href="lzw-lib_8c.html#a764291b6bdb2db852e7ea892e58b573c">FIRST_STRING</a>, et <a class="el" href="lzw-lib_8c.html#a4350ea460ad64714c617506677d68191">NULL_CODE</a>.</p>
+
+<p>Référencé par <a class="el" href="lzwfilter_8c.html#a3c04138a5bfe5d72780bb7e82a18e627">main()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

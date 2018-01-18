@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>rle: Référence du fichier Algorithm comparaison/shannon-fano/src/bitop.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">rle
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.11 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_3e89c4d17863a47d5d71f3833bb79980.html">Algorithm comparaison</a></li><li class="navelem"><a class="el" href="dir_fe4b5768f7f581b3d87ca79181882fce.html">shannon-fano</a></li><li class="navelem"><a class="el" href="dir_39ef133f2e338deae398eb9a87316c02.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier bitop.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="main_8h_source.html">main.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a7f4a934a5b68a1c7c37d9aaefca69174"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitop_8c.html#a7f4a934a5b68a1c7c37d9aaefca69174">bittochar</a> (char v[])</td></tr>
+<tr class="separator:a7f4a934a5b68a1c7c37d9aaefca69174"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba4d664b7e36fdbb7cc337310c6678cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitop_8c.html#aba4d664b7e36fdbb7cc337310c6678cd">chartobit</a> (int val, char v[])</td></tr>
+<tr class="separator:aba4d664b7e36fdbb7cc337310c6678cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addadfed71104715d0b3fc74282798b91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitop_8c.html#addadfed71104715d0b3fc74282798b91">writebit</a> (FILE *outfile, <a class="el" href="structbuffer.html">buffer</a> *buff, char bit)</td></tr>
+<tr class="separator:addadfed71104715d0b3fc74282798b91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79e8d28f92f25b87673d385b472c8f9a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitop_8c.html#a79e8d28f92f25b87673d385b472c8f9a">readbit</a> (FILE *infile, <a class="el" href="structbuffer.html">buffer</a> *buff)</td></tr>
+<tr class="separator:a79e8d28f92f25b87673d385b472c8f9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a class="anchor" id="a7f4a934a5b68a1c7c37d9aaefca69174"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int bittochar </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>v</em>[]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Référencé par <a class="el" href="unpack_8c.html#acc9be04d86d1ca8af7bf402cf95ef4df">buildtree()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aba4d664b7e36fdbb7cc337310c6678cd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chartobit </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>val</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>v</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Référencé par <a class="el" href="pack_8c.html#a9025b9a7c06f123b7c7b5f37762a2389">pack()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a79e8d28f92f25b87673d385b472c8f9a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int readbit </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>infile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structbuffer.html">buffer</a> *&#160;</td>
+          <td class="paramname"><em>buff</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Références <a class="el" href="structbuffer.html#af3f397315f9d1257c0b271d6692c9e14">buffer::size</a>, et <a class="el" href="structbuffer.html#a163583afb66d9886930bae6b254e5ff0">buffer::v</a>.</p>
+
+<p>Référencé par <a class="el" href="unpack_8c.html#acc9be04d86d1ca8af7bf402cf95ef4df">buildtree()</a>, et <a class="el" href="unpack_8c.html#a0cf1ef1d50280bd57dd95fbb7c6a0580">unpack()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="addadfed71104715d0b3fc74282798b91"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void writebit </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>outfile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structbuffer.html">buffer</a> *&#160;</td>
+          <td class="paramname"><em>buff</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>bit</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Références <a class="el" href="structbuffer.html#af3f397315f9d1257c0b271d6692c9e14">buffer::size</a>, et <a class="el" href="structbuffer.html#a163583afb66d9886930bae6b254e5ff0">buffer::v</a>.</p>
+
+<p>Référencé par <a class="el" href="pack_8c.html#a9025b9a7c06f123b7c7b5f37762a2389">pack()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

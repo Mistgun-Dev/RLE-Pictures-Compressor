@@ -1,0 +1,423 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>rle: Référence du fichier Algorithm comparaison/huffman/huffman.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">rle
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.11 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_3e89c4d17863a47d5d71f3833bb79980.html">Algorithm comparaison</a></li><li class="navelem"><a class="el" href="dir_e63228e9ccdc86bae276e40b92f0cd87.html">huffman</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Structures de données</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Fonctions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier huffman.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Structures de données</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structarbre.html">arbre</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structarbre__data.html">arbre_data</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdictionnaire.html">dictionnaire</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ab630a05f112d71923a37bf014884b060"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="huffman_8c.html#ab630a05f112d71923a37bf014884b060">CODE_MAX_LEN</a>&#160;&#160;&#160;32</td></tr>
+<tr class="separator:ab630a05f112d71923a37bf014884b060"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b5839f71a3b6e7d64b2d5e9967e3dd1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="huffman_8c.html#a8b5839f71a3b6e7d64b2d5e9967e3dd1">BUF_LEN</a>&#160;&#160;&#160;512</td></tr>
+<tr class="separator:a8b5839f71a3b6e7d64b2d5e9967e3dd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:ac2ee47547d850695961cfcf6bcf059cc"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="huffman_8c.html#ac2ee47547d850695961cfcf6bcf059cc">huffman_calculer_frequences</a> (FILE *, unsigned long *, unsigned short *)</td></tr>
+<tr class="separator:ac2ee47547d850695961cfcf6bcf059cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1a54f8b44d7897532d2c11c5cd4ccac"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="huffman_8c.html#af1a54f8b44d7897532d2c11c5cd4ccac">huffman_lire_frequences</a> (FILE *)</td></tr>
+<tr class="separator:af1a54f8b44d7897532d2c11c5cd4ccac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaac0600b46865956a6d200b26964c335"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="huffman_8c.html#aaac0600b46865956a6d200b26964c335">huffman_creer_arbre</a> (short)</td></tr>
+<tr class="separator:aaac0600b46865956a6d200b26964c335"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae916031733ebd15ff66d140c34ef134c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="huffman_8c.html#ae916031733ebd15ff66d140c34ef134c">huffman_creer_dictionnaire</a> (unsigned char *, short, short)</td></tr>
+<tr class="separator:ae916031733ebd15ff66d140c34ef134c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc9927b6578c3a024fe9d73e95049ee4"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="huffman_8c.html#adc9927b6578c3a024fe9d73e95049ee4">huffman_creer_fichier_frequences</a> (FILE *, FILE *)</td></tr>
+<tr class="separator:adc9927b6578c3a024fe9d73e95049ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab698248ae81e531a42ee3f5bd4fc38c3"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="huffman_8c.html#ab698248ae81e531a42ee3f5bd4fc38c3">huffman_compacter</a> (FILE *, FILE *, FILE *)</td></tr>
+<tr class="separator:ab698248ae81e531a42ee3f5bd4fc38c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f33e7c5e6dc678acb1046a41a637b1d"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="huffman_8c.html#a9f33e7c5e6dc678acb1046a41a637b1d">huffman_decompacter</a> (FILE *, FILE *, FILE *)</td></tr>
+<tr class="separator:a9f33e7c5e6dc678acb1046a41a637b1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="huffman_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main</a> (int argc, char *argv[])</td></tr>
+<tr class="separator:a0ddf1224851353fc92bfbff6f499fa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a1deee176cb3cf30295e8ccf7a1165516"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structarbre__data.html">arbre_data</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="huffman_8c.html#a1deee176cb3cf30295e8ccf7a1165516">arbre_d</a></td></tr>
+<tr class="separator:a1deee176cb3cf30295e8ccf7a1165516"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f4208909dd1f1164c30e032cc19b85a"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structarbre.html">arbre</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="huffman_8c.html#a1f4208909dd1f1164c30e032cc19b85a">arbre</a></td></tr>
+<tr class="separator:a1f4208909dd1f1164c30e032cc19b85a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a168b6ec4552d6e3f314682eae92e0cd2"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structdictionnaire.html">dictionnaire</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="huffman_8c.html#a168b6ec4552d6e3f314682eae92e0cd2">dico</a></td></tr>
+<tr class="separator:a168b6ec4552d6e3f314682eae92e0cd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentation des macros</h2>
+<a class="anchor" id="a8b5839f71a3b6e7d64b2d5e9967e3dd1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BUF_LEN&#160;&#160;&#160;512</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Référencé par <a class="el" href="huffman_8c.html#ac2ee47547d850695961cfcf6bcf059cc">huffman_calculer_frequences()</a>, <a class="el" href="huffman_8c.html#ab698248ae81e531a42ee3f5bd4fc38c3">huffman_compacter()</a>, et <a class="el" href="huffman_8c.html#a9f33e7c5e6dc678acb1046a41a637b1d">huffman_decompacter()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab630a05f112d71923a37bf014884b060"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CODE_MAX_LEN&#160;&#160;&#160;32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Référencé par <a class="el" href="huffman_8c.html#ab698248ae81e531a42ee3f5bd4fc38c3">huffman_compacter()</a>, et <a class="el" href="huffman_8c.html#ae916031733ebd15ff66d140c34ef134c">huffman_creer_dictionnaire()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a class="anchor" id="ac2ee47547d850695961cfcf6bcf059cc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short huffman_calculer_frequences </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long *&#160;</td>
+          <td class="paramname"><em>nbre_octets</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short *&#160;</td>
+          <td class="paramname"><em>nbre_ascii</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Références <a class="el" href="huffman_8c.html#a8b5839f71a3b6e7d64b2d5e9967e3dd1">BUF_LEN</a>, et <a class="el" href="structarbre__data.html#ac5457b7079d1450410001e79579462d0">arbre_data::index_suivant</a>.</p>
+
+<p>Référencé par <a class="el" href="huffman_8c.html#ab698248ae81e531a42ee3f5bd4fc38c3">huffman_compacter()</a>, et <a class="el" href="huffman_8c.html#adc9927b6578c3a024fe9d73e95049ee4">huffman_creer_fichier_frequences()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab698248ae81e531a42ee3f5bd4fc38c3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char huffman_compacter </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>frq</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Références <a class="el" href="huffman_8c.html#a8b5839f71a3b6e7d64b2d5e9967e3dd1">BUF_LEN</a>, <a class="el" href="structdictionnaire.html#aa08ee2e15da8ae3d2b525f5b089b8678">dictionnaire::code</a>, <a class="el" href="huffman_8c.html#ab630a05f112d71923a37bf014884b060">CODE_MAX_LEN</a>, <a class="el" href="huffman_8c.html#ac2ee47547d850695961cfcf6bcf059cc">huffman_calculer_frequences()</a>, <a class="el" href="huffman_8c.html#aaac0600b46865956a6d200b26964c335">huffman_creer_arbre()</a>, <a class="el" href="huffman_8c.html#ae916031733ebd15ff66d140c34ef134c">huffman_creer_dictionnaire()</a>, <a class="el" href="huffman_8c.html#af1a54f8b44d7897532d2c11c5cd4ccac">huffman_lire_frequences()</a>, <a class="el" href="structarbre__data.html#ac5457b7079d1450410001e79579462d0">arbre_data::index_suivant</a>, et <a class="el" href="structdictionnaire.html#a06ad2afd4a0ede543f48e1337b987888">dictionnaire::taille</a>.</p>
+
+<p>Référencé par <a class="el" href="huffman_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaac0600b46865956a6d200b26964c335"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short huffman_creer_arbre </td>
+          <td>(</td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>index_frequence</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Références <a class="el" href="structarbre.html#a76691596b4b79b1a1113eeb8f2ca5b78">arbre::branche0</a>, <a class="el" href="structarbre.html#a61f1a151f2e23b82c41deb2077b8465b">arbre::branche1</a>, <a class="el" href="structarbre__data.html#a49a95169eaedd5fccd9fd68ef84ec638">arbre_data::frequence</a>, et <a class="el" href="structarbre__data.html#ac5457b7079d1450410001e79579462d0">arbre_data::index_suivant</a>.</p>
+
+<p>Référencé par <a class="el" href="huffman_8c.html#ab698248ae81e531a42ee3f5bd4fc38c3">huffman_compacter()</a>, et <a class="el" href="huffman_8c.html#a9f33e7c5e6dc678acb1046a41a637b1d">huffman_decompacter()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae916031733ebd15ff66d140c34ef134c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void huffman_creer_dictionnaire </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>pos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Références <a class="el" href="structarbre.html#a76691596b4b79b1a1113eeb8f2ca5b78">arbre::branche0</a>, <a class="el" href="structarbre.html#a61f1a151f2e23b82c41deb2077b8465b">arbre::branche1</a>, <a class="el" href="huffman_8c.html#ab630a05f112d71923a37bf014884b060">CODE_MAX_LEN</a>, et <a class="el" href="structdictionnaire.html#a06ad2afd4a0ede543f48e1337b987888">dictionnaire::taille</a>.</p>
+
+<p>Référencé par <a class="el" href="huffman_8c.html#ab698248ae81e531a42ee3f5bd4fc38c3">huffman_compacter()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adc9927b6578c3a024fe9d73e95049ee4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char huffman_creer_fichier_frequences </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>dst</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Références <a class="el" href="huffman_8c.html#ac2ee47547d850695961cfcf6bcf059cc">huffman_calculer_frequences()</a>, et <a class="el" href="structarbre__data.html#ac5457b7079d1450410001e79579462d0">arbre_data::index_suivant</a>.</p>
+
+<p>Référencé par <a class="el" href="huffman_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9f33e7c5e6dc678acb1046a41a637b1d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char huffman_decompacter </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>frq</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Références <a class="el" href="structarbre.html#a76691596b4b79b1a1113eeb8f2ca5b78">arbre::branche0</a>, <a class="el" href="structarbre.html#a61f1a151f2e23b82c41deb2077b8465b">arbre::branche1</a>, <a class="el" href="huffman_8c.html#a8b5839f71a3b6e7d64b2d5e9967e3dd1">BUF_LEN</a>, <a class="el" href="huffman_8c.html#aaac0600b46865956a6d200b26964c335">huffman_creer_arbre()</a>, et <a class="el" href="huffman_8c.html#af1a54f8b44d7897532d2c11c5cd4ccac">huffman_lire_frequences()</a>.</p>
+
+<p>Référencé par <a class="el" href="huffman_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af1a54f8b44d7897532d2c11c5cd4ccac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short huffman_lire_frequences </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>frq</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Références <a class="el" href="structarbre__data.html#ac5457b7079d1450410001e79579462d0">arbre_data::index_suivant</a>.</p>
+
+<p>Référencé par <a class="el" href="huffman_8c.html#ab698248ae81e531a42ee3f5bd4fc38c3">huffman_compacter()</a>, et <a class="el" href="huffman_8c.html#a9f33e7c5e6dc678acb1046a41a637b1d">huffman_decompacter()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0ddf1224851353fc92bfbff6f499fa97"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>argv</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Références <a class="el" href="huffman_8c.html#ab698248ae81e531a42ee3f5bd4fc38c3">huffman_compacter()</a>, <a class="el" href="huffman_8c.html#adc9927b6578c3a024fe9d73e95049ee4">huffman_creer_fichier_frequences()</a>, et <a class="el" href="huffman_8c.html#a9f33e7c5e6dc678acb1046a41a637b1d">huffman_decompacter()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des variables</h2>
+<a class="anchor" id="a1f4208909dd1f1164c30e032cc19b85a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structarbre.html">arbre</a>* <a class="el" href="structarbre.html">arbre</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1deee176cb3cf30295e8ccf7a1165516"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structarbre__data.html">arbre_data</a>* arbre_d</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a168b6ec4552d6e3f314682eae92e0cd2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structdictionnaire.html">dictionnaire</a>* dico</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

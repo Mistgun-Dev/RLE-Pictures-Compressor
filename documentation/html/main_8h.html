@@ -1,0 +1,631 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>rle: Référence du fichier Algorithm comparaison/shannon-fano/src/main.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">rle
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.11 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_3e89c4d17863a47d5d71f3833bb79980.html">Algorithm comparaison</a></li><li class="navelem"><a class="el" href="dir_fe4b5768f7f581b3d87ca79181882fce.html">shannon-fano</a></li><li class="navelem"><a class="el" href="dir_39ef133f2e338deae398eb9a87316c02.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Structures de données</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Définitions de type</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier main.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;assert.h&gt;</code><br />
+<code>#include &lt;time.h&gt;</code><br />
+</div>
+<p><a href="main_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Structures de données</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structptab.html">ptab</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbuffer.html">buffer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtree.html">tree</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a074ac139464c471d08aa2ad62884fc43"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a074ac139464c471d08aa2ad62884fc43">MAPSIZE</a>&#160;&#160;&#160;256</td></tr>
+<tr class="separator:a074ac139464c471d08aa2ad62884fc43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47c1b9c9a7b4183ac4fd96dc5ca8e820"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a47c1b9c9a7b4183ac4fd96dc5ca8e820">STAT</a></td></tr>
+<tr class="separator:a47c1b9c9a7b4183ac4fd96dc5ca8e820"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Définitions de type</h2></td></tr>
+<tr class="memitem:ace30d980821eaa724444570ce9a6e48a"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structptab.html">ptab</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#ace30d980821eaa724444570ce9a6e48a">ptab</a></td></tr>
+<tr class="separator:ace30d980821eaa724444570ce9a6e48a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae320adc3baacdf8391d1d635b48d1fd2"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structbuffer.html">buffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#ae320adc3baacdf8391d1d635b48d1fd2">buffer</a></td></tr>
+<tr class="separator:ae320adc3baacdf8391d1d635b48d1fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2f3e98effa017fef8cc5cb7f9e346f5"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structtree.html">tree</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#aa2f3e98effa017fef8cc5cb7f9e346f5">tree</a></td></tr>
+<tr class="separator:aa2f3e98effa017fef8cc5cb7f9e346f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a9025b9a7c06f123b7c7b5f37762a2389"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a9025b9a7c06f123b7c7b5f37762a2389">pack</a> (const char *input, const char *output)</td></tr>
+<tr class="separator:a9025b9a7c06f123b7c7b5f37762a2389"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaf4ff793e8dcbfd251c6729449cd0cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#acaf4ff793e8dcbfd251c6729449cd0cf">encode</a> (int li, int ri)</td></tr>
+<tr class="separator:acaf4ff793e8dcbfd251c6729449cd0cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28151b390a91a413d732b5f903a47324"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a28151b390a91a413d732b5f903a47324">charcat</a> (char s[], char t)</td></tr>
+<tr class="separator:a28151b390a91a413d732b5f903a47324"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2280e25018a155a934f52463030b0a4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#ae2280e25018a155a934f52463030b0a4">ptablebuild</a> (FILE *infile, <a class="el" href="structptab.html">ptab</a> v[])</td></tr>
+<tr class="separator:ae2280e25018a155a934f52463030b0a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cf1ef1d50280bd57dd95fbb7c6a0580"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a0cf1ef1d50280bd57dd95fbb7c6a0580">unpack</a> (const char *input, const char *output)</td></tr>
+<tr class="separator:a0cf1ef1d50280bd57dd95fbb7c6a0580"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc9be04d86d1ca8af7bf402cf95ef4df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#acc9be04d86d1ca8af7bf402cf95ef4df">buildtree</a> (FILE *infile, <a class="el" href="structtree.html">tree</a> *root, <a class="el" href="structbuffer.html">buffer</a> *buff)</td></tr>
+<tr class="separator:acc9be04d86d1ca8af7bf402cf95ef4df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98f07630c668bc0bad32dd71f0522a6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a98f07630c668bc0bad32dd71f0522a6c">swap</a> (<a class="el" href="structptab.html">ptab</a> v[], int i, int j)</td></tr>
+<tr class="separator:a98f07630c668bc0bad32dd71f0522a6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a492a3667bb0c1358045a8e87f9fa3790"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a492a3667bb0c1358045a8e87f9fa3790">quicksort</a> (<a class="el" href="structptab.html">ptab</a> v[], int first, int last)</td></tr>
+<tr class="separator:a492a3667bb0c1358045a8e87f9fa3790"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83b65b4a85fe06894c69a91eab32475e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a83b65b4a85fe06894c69a91eab32475e">clear</a> (<a class="el" href="structtree.html">tree</a> *root)</td></tr>
+<tr class="separator:a83b65b4a85fe06894c69a91eab32475e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09ed2621eeebed33d50977076a0ca140"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a09ed2621eeebed33d50977076a0ca140">gototree</a> (char c, <a class="el" href="structtree.html">tree</a> **t)</td></tr>
+<tr class="separator:a09ed2621eeebed33d50977076a0ca140"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf1837ab980d69e163003c4cc9194f72"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtree.html">tree</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#abf1837ab980d69e163003c4cc9194f72">addelement</a> (int v)</td></tr>
+<tr class="separator:abf1837ab980d69e163003c4cc9194f72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addadfed71104715d0b3fc74282798b91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#addadfed71104715d0b3fc74282798b91">writebit</a> (FILE *outfile, <a class="el" href="structbuffer.html">buffer</a> *buff, char bit)</td></tr>
+<tr class="separator:addadfed71104715d0b3fc74282798b91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79e8d28f92f25b87673d385b472c8f9a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a79e8d28f92f25b87673d385b472c8f9a">readbit</a> (FILE *infile, <a class="el" href="structbuffer.html">buffer</a> *buff)</td></tr>
+<tr class="separator:a79e8d28f92f25b87673d385b472c8f9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba4d664b7e36fdbb7cc337310c6678cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#aba4d664b7e36fdbb7cc337310c6678cd">chartobit</a> (int val, char v[])</td></tr>
+<tr class="separator:aba4d664b7e36fdbb7cc337310c6678cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f4a934a5b68a1c7c37d9aaefca69174"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a7f4a934a5b68a1c7c37d9aaefca69174">bittochar</a> (char v[])</td></tr>
+<tr class="separator:a7f4a934a5b68a1c7c37d9aaefca69174"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentation des macros</h2>
+<a class="anchor" id="a074ac139464c471d08aa2ad62884fc43"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAPSIZE&#160;&#160;&#160;256</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Référencé par <a class="el" href="pack_8c.html#a0d32aaaa2bc564fb833aa0de50e9adff">ptablebuild()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a47c1b9c9a7b4183ac4fd96dc5ca8e820"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STAT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des définitions de type</h2>
+<a class="anchor" id="ae320adc3baacdf8391d1d635b48d1fd2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structbuffer.html">buffer</a>  <a class="el" href="structbuffer.html">buffer</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ace30d980821eaa724444570ce9a6e48a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structptab.html">ptab</a>  <a class="el" href="structptab.html">ptab</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa2f3e98effa017fef8cc5cb7f9e346f5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structtree.html">tree</a>  <a class="el" href="structtree.html">tree</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a class="anchor" id="abf1837ab980d69e163003c4cc9194f72"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structtree.html">tree</a>* addelement </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Références <a class="el" href="structtree.html#ac5fb85480ddf2f373b099c2a2df0edab">tree::data</a>, <a class="el" href="structtree.html#a719b6f34a3ac12d46c29f9b7d6308438">tree::left</a>, et <a class="el" href="structtree.html#a50cf9e7e35dcd0cc2f207389d1ac8852">tree::right</a>.</p>
+
+<p>Référencé par <a class="el" href="unpack_8c.html#acc9be04d86d1ca8af7bf402cf95ef4df">buildtree()</a>, et <a class="el" href="unpack_8c.html#a0cf1ef1d50280bd57dd95fbb7c6a0580">unpack()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7f4a934a5b68a1c7c37d9aaefca69174"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int bittochar </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>v</em>[]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Référencé par <a class="el" href="unpack_8c.html#acc9be04d86d1ca8af7bf402cf95ef4df">buildtree()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acc9be04d86d1ca8af7bf402cf95ef4df"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void buildtree </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>infile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structtree.html">tree</a> *&#160;</td>
+          <td class="paramname"><em>root</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structbuffer.html">buffer</a> *&#160;</td>
+          <td class="paramname"><em>buff</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Références <a class="el" href="bintree_8c.html#abf1837ab980d69e163003c4cc9194f72">addelement()</a>, <a class="el" href="bitop_8c.html#a7f4a934a5b68a1c7c37d9aaefca69174">bittochar()</a>, <a class="el" href="structtree.html#ac5fb85480ddf2f373b099c2a2df0edab">tree::data</a>, <a class="el" href="structtree.html#a719b6f34a3ac12d46c29f9b7d6308438">tree::left</a>, <a class="el" href="bitop_8c.html#a79e8d28f92f25b87673d385b472c8f9a">readbit()</a>, et <a class="el" href="structtree.html#a50cf9e7e35dcd0cc2f207389d1ac8852">tree::right</a>.</p>
+
+<p>Référencé par <a class="el" href="unpack_8c.html#a0cf1ef1d50280bd57dd95fbb7c6a0580">unpack()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a28151b390a91a413d732b5f903a47324"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void charcat </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>s</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Référencé par <a class="el" href="pack_8c.html#acaf4ff793e8dcbfd251c6729449cd0cf">encode()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aba4d664b7e36fdbb7cc337310c6678cd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chartobit </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>val</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>v</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Référencé par <a class="el" href="pack_8c.html#a9025b9a7c06f123b7c7b5f37762a2389">pack()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a83b65b4a85fe06894c69a91eab32475e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void clear </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtree.html">tree</a> *&#160;</td>
+          <td class="paramname"><em>root</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Références <a class="el" href="bintree_8c.html#a83b65b4a85fe06894c69a91eab32475e">clear()</a>, <a class="el" href="structtree.html#a719b6f34a3ac12d46c29f9b7d6308438">tree::left</a>, et <a class="el" href="structtree.html#a50cf9e7e35dcd0cc2f207389d1ac8852">tree::right</a>.</p>
+
+<p>Référencé par <a class="el" href="main_8h.html#a83b65b4a85fe06894c69a91eab32475e">clear()</a>, et <a class="el" href="unpack_8c.html#a0cf1ef1d50280bd57dd95fbb7c6a0580">unpack()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acaf4ff793e8dcbfd251c6729449cd0cf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void encode </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>li</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ri</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Références <a class="el" href="pack_8c.html#a28151b390a91a413d732b5f903a47324">charcat()</a>, <a class="el" href="pack_8c.html#a0362387055da2d1a21e4ec576193b261">codes</a>, et <a class="el" href="structptab.html#a8c106a2af8d9adf65818a509f79b2b58">ptab::p</a>.</p>
+
+<p>Référencé par <a class="el" href="pack_8c.html#a9025b9a7c06f123b7c7b5f37762a2389">pack()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a09ed2621eeebed33d50977076a0ca140"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gototree </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structtree.html">tree</a> **&#160;</td>
+          <td class="paramname"><em>t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Référencé par <a class="el" href="unpack_8c.html#a0cf1ef1d50280bd57dd95fbb7c6a0580">unpack()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9025b9a7c06f123b7c7b5f37762a2389"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pack </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>output</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Références <a class="el" href="structptab.html#a349056377638472f33857522a65d5e51">ptab::ch</a>, <a class="el" href="bitop_8c.html#aba4d664b7e36fdbb7cc337310c6678cd">chartobit()</a>, <a class="el" href="pack_8c.html#a0362387055da2d1a21e4ec576193b261">codes</a>, <a class="el" href="pack_8c.html#acaf4ff793e8dcbfd251c6729449cd0cf">encode()</a>, <a class="el" href="pack_8c.html#a0d32aaaa2bc564fb833aa0de50e9adff">ptablebuild()</a>, <a class="el" href="structbuffer.html#af3f397315f9d1257c0b271d6692c9e14">buffer::size</a>, <a class="el" href="structbuffer.html#a163583afb66d9886930bae6b254e5ff0">buffer::v</a>, et <a class="el" href="bitop_8c.html#addadfed71104715d0b3fc74282798b91">writebit()</a>.</p>
+
+<p>Référencé par <a class="el" href="Algorithm_01comparaison_2shannon-fano_2src_2main_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae2280e25018a155a934f52463030b0a4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ptablebuild </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>infile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structptab.html">ptab</a>&#160;</td>
+          <td class="paramname"><em>v</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Références <a class="el" href="structptab.html#a349056377638472f33857522a65d5e51">ptab::ch</a>, <a class="el" href="main_8h.html#a074ac139464c471d08aa2ad62884fc43">MAPSIZE</a>, <a class="el" href="structptab.html#a8c106a2af8d9adf65818a509f79b2b58">ptab::p</a>, et <a class="el" href="main_8h.html#a492a3667bb0c1358045a8e87f9fa3790">quicksort()</a>.</p>
+
+<p>Référencé par <a class="el" href="pack_8c.html#a9025b9a7c06f123b7c7b5f37762a2389">pack()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a492a3667bb0c1358045a8e87f9fa3790"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void quicksort </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structptab.html">ptab</a>&#160;</td>
+          <td class="paramname"><em>v</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>last</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Références <a class="el" href="structptab.html#a8c106a2af8d9adf65818a509f79b2b58">ptab::p</a>, et <a class="el" href="sort_8c.html#a98f07630c668bc0bad32dd71f0522a6c">swap()</a>.</p>
+
+<p>Référencé par <a class="el" href="pack_8c.html#a0d32aaaa2bc564fb833aa0de50e9adff">ptablebuild()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a79e8d28f92f25b87673d385b472c8f9a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int readbit </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>infile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structbuffer.html">buffer</a> *&#160;</td>
+          <td class="paramname"><em>buff</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Références <a class="el" href="structbuffer.html#af3f397315f9d1257c0b271d6692c9e14">buffer::size</a>, et <a class="el" href="structbuffer.html#a163583afb66d9886930bae6b254e5ff0">buffer::v</a>.</p>
+
+<p>Référencé par <a class="el" href="unpack_8c.html#acc9be04d86d1ca8af7bf402cf95ef4df">buildtree()</a>, et <a class="el" href="unpack_8c.html#a0cf1ef1d50280bd57dd95fbb7c6a0580">unpack()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a98f07630c668bc0bad32dd71f0522a6c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void swap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structptab.html">ptab</a>&#160;</td>
+          <td class="paramname"><em>v</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>j</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Référencé par <a class="el" href="sort_8c.html#a492a3667bb0c1358045a8e87f9fa3790">quicksort()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0cf1ef1d50280bd57dd95fbb7c6a0580"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unpack </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>output</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Références <a class="el" href="bintree_8c.html#abf1837ab980d69e163003c4cc9194f72">addelement()</a>, <a class="el" href="unpack_8c.html#acc9be04d86d1ca8af7bf402cf95ef4df">buildtree()</a>, <a class="el" href="bintree_8c.html#a83b65b4a85fe06894c69a91eab32475e">clear()</a>, <a class="el" href="bintree_8c.html#a09ed2621eeebed33d50977076a0ca140">gototree()</a>, <a class="el" href="bitop_8c.html#a79e8d28f92f25b87673d385b472c8f9a">readbit()</a>, <a class="el" href="structbuffer.html#af3f397315f9d1257c0b271d6692c9e14">buffer::size</a>, et <a class="el" href="structbuffer.html#a163583afb66d9886930bae6b254e5ff0">buffer::v</a>.</p>
+
+<p>Référencé par <a class="el" href="Algorithm_01comparaison_2shannon-fano_2src_2main_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="addadfed71104715d0b3fc74282798b91"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void writebit </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>outfile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structbuffer.html">buffer</a> *&#160;</td>
+          <td class="paramname"><em>buff</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>bit</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Références <a class="el" href="structbuffer.html#af3f397315f9d1257c0b271d6692c9e14">buffer::size</a>, et <a class="el" href="structbuffer.html#a163583afb66d9886930bae6b254e5ff0">buffer::v</a>.</p>
+
+<p>Référencé par <a class="el" href="pack_8c.html#a9025b9a7c06f123b7c7b5f37762a2389">pack()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>
